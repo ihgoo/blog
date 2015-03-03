@@ -1,0 +1,6 @@
+{
+    "src":          "/Users/Choi/blog/cdn",
+    "dest":         "qiniu:access_key=SVjTt8tpNL8D3IKrkvpLlabZFEjQFfGbaiiDiolO&secret_key=CY4ZMyL2bVRgAf-Ok_NRg__svRRnrCqNYYstgtiJ&bucket=ihgoo",
+    "deletable":    0,
+    "debug_level":  1
+}

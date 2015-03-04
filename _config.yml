@@ -4,10 +4,10 @@
 
 # Site
 title: 训猴
-subtitle: 我想写个好的App…
-description:
+subtitle: Life is short,play more.
+description: Android,Blog
 author: Kelvin Hu
-email:
+email: ihgoo2008@gmail.com
 language: zh-CN
 
 # URL
@@ -79,7 +79,7 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: light
+theme: newlight
 exclude_generator:
 
 # Deployment
@@ -88,3 +88,9 @@ deploy:
  type: github
  repository: git@github.com:ihgoo/ihgoo.github.io.git
  branch: master
+
+baidusitemap:
+ path: baidusitemap.xml
+
+sitemap:
+ path: sitemap.xml

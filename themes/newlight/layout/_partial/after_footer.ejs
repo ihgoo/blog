@@ -1,0 +1,29 @@
+<script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script  type='text/javascript' src="http://ihgoo.qiniudn.com/jqueryimagesloadedminjs.txt"></script>
+<script type='text/javascript' src="http://ihgoo.qiniudn.com/gallery.txt"></script>
+
+<% if (config.disqus_shortname){ %>
+<script type="text/javascript">
+var disqus_shortname = '<%= config.disqus_shortname %>';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+<% } %>
+
+<% if (theme.fancybox){ %>
+<link rel="stylesheet" href="http://ihgoo.qiniudn.com/jquery.fancybox.css.txt" media="screen" type="text/css">
+<script src="http://ihgoo.qiniudn.com/jquery.fancybox.pack.js.txt"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+<% } %>
+
+<%- partial('_partial/baidu_stats', {item: page, index: false}) %>

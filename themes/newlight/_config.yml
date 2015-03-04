@@ -1,0 +1,50 @@
+menu:
+  Home: /
+  Archives: /archives
+
+widgets: 
+#- search
+- about_me
+- category
+- tag
+- recent_posts
+- duoshuo_recent_comments
+- links
+
+excerpt_link: 全文
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
+#  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true
+
+google_analytics:
+rss:
+
+links:
+- name: 开源项目源码解析
+  link: http://www.codekk.com/open-source-project-analysis
+- name: 郭霖的博客
+  link: http://blog.csdn.net/sinyu890807/
+- name: 鸿翔的博客
+  link: http://blog.csdn.net/lmj623565791
+
+
+duoshuo: ihgoo
+
+about_me:
+  title: ABOUT ME
+  avatar: http://tp4.sinaimg.cn/2525239883/180/5718255326/1
+  texts:
+  - <a href="/about" target="_BLANK">About Me</a>
+  - 微博：<a href="http://weibo.com/2525239883" target="_BLANK">@大咕咕猴</a>

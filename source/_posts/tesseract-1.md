@@ -1,6 +1,6 @@
-title: Tesseract-OCR 简单入门
+title: Tesseract-OCR 简单入门（一）
 date: 2015-1-31 18:34:22
-categories: 好玩的
+categories: Captcha
 ---
 ###介绍
 Tesseract是一个开源的OCR引擎，遵循Apache2.0，是由HP实验室开始研发，96年因HP放弃ORC业务，Tesseract也从此停止开发。HP将其项目开源，2006年由谷歌重启该项目。

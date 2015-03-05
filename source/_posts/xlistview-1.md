@@ -114,3 +114,5 @@ public class MainActivity extends Activity implements IXListViewListener {
 ```
 
 好了，下拉刷新上拉加载已经写好了，上面代码中，在实现了IXListViewListener后，会有两个回调事件，一个是上拉回调，一个是下拉回调。
+
+篇二，改变加载时ListView头部的样式及动画改变[上拉加载下拉刷新，xlistview详解（二）](http://xunhou.me/xlistview-2/)

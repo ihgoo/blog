@@ -1,9 +1,11 @@
-title: dispatch-touch-event
+title: View的事件分发机制
 date: 2015-03-25 19:18:15
 categories: Android
 ---
 
 View事件的传递过程是dispatchTouchEvent  ->  mOnTouchListener.onTouch -> onTouchEvent -> onClick
+
+<!--more-->
 
 先来看dispatchTouchEvent 方法中
 
@@ -136,4 +138,20 @@ if (((viewFlags & CLICKABLE) == CLICKABLE ||
     }
 ````
 
-当手指按下view的时候，将mPrivateFlags设置为PREPRSSED，发送延时任务，在115毫秒之后会将这个flag标记为长按事件，
+当手指按下view的时候（第49行-56行），将mPrivateFlags设置为PREPRSSED，发送延时任务(postDelayed)，在115毫秒之后会将这个flag标记为长按事件.
+
+当手指在view上抬起的时候(第4-47行)，判断mPrivateFlags是否为PREPRESSED。
+
+如果为真，则会继续判断当前view是否可获得焦点，如果可以获得则执行requestFocus方法。
+
+14-16行，view控件是否有长按事件，如果有则移除掉长按事件。
+
+19-29行，前面执行了requestFocus方法，得到了fousTaken这个变量，判断可获得焦点进入if判断中，mPerformClick为null，创建一个preformClick实例，使用代码主动调用控件的点击事件，然后添加到执行队列中。
+
+36-45行，将mPrivateFlags还原，刷新控件背景，并执行mUnsetPressedState。最后移除轻触检测。
+
+
+最后来看move时的代码，64-84行，判断当前坐标位置是否还在控件上面，如果不在，就移除轻触检测，移除长按检测，将控件还原，刷新控件背景。
+
+
+

@@ -1,6 +1,8 @@
 menu:
   Home: /
   Archives: /archives
+  Nav: /nav
+  
 
 widgets: 
 #- search

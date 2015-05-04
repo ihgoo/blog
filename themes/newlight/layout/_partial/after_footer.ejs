@@ -1,6 +1,6 @@
 
-<script  type='text/javascript' src="http://ihgoo.qiniudn.com/jqueryimagesloadedminjs.txt"></script>
-<script type='text/javascript' src="http://ihgoo.qiniudn.com/gallery.txt"></script>
+<script type='text/javascript' src="<%- config.qiniuroot %>jqueryimagesloadedmin.js"></script>
+<script type='text/javascript' src="<%- config.qiniuroot %>gallery.js"></script>
 
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
@@ -22,8 +22,8 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 <% } %>
 
 <% if (theme.fancybox){ %>
-<link rel="stylesheet" href="http://ihgoo.qiniudn.com/jquery.fancybox.css.txt" media="screen" type="text/css">
-<script src="http://ihgoo.qiniudn.com/jquery.fancybox.pack.js.txt"></script>
+<link rel="stylesheet" href="<%- config.qiniuroot %>jquery.fancybox.css" media="screen" type="text/css">
+<script src="<%- config.qiniuroot %>jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 (function($){
   $('.fancybox').fancybox();

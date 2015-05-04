@@ -14,6 +14,7 @@ language: zh-CN
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://ihgoo.github.io
 root: /
+qiniuroot: http://ihgoo.qiniudn.com/
 permalink: :title/
 tag_dir: tags
 archive_dir: archives
@@ -82,6 +83,10 @@ disqus_shortname:
 theme: newlight
 exclude_generator:
 
+plugins:
+- hexo-generator-sitemap
+
+
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
@@ -89,8 +94,10 @@ deploy:
  repository: git@github.com:ihgoo/ihgoo.github.io.git
  branch: master
 
+sitemap:
+ path: sitemap.xml
+
 baidusitemap:
  path: baidusitemap.xml
 
-sitemap:
- path: sitemap.xml
+

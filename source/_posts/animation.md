@@ -119,3 +119,10 @@ Interpolator作为动画的插值器，动画是如何变化的，都是通过�
 
 - [简单插值器分析](http://my.oschina.net/banxi/blog/135633#OSC_h2_7)
 - [动画初步使用以及自定义插值器](http://www.cnblogs.com/boliu/archive/2013/09/02/3295944.html)
+
+
+
+
+本文参考自 
+http://www.androidcommunitydocs.com/guide/topics/graphics/prop-animation.html
+http://blog.csdn.net/lmj623565791/article/details/38067475

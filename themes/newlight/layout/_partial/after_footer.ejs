@@ -2,9 +2,14 @@
 <script type='text/javascript' src="<%- config.qiniuroot %>jqueryimagesloadedmin.js"></script>
 <script type='text/javascript' src="<%- config.qiniuroot %>gallery.js"></script>
 
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/hm.js?a0abc91336d3684db4a1ead11e33a97e' type='text/javascript'%3E%3C/script%3E"));
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e45c63a7aabb59b1da0291c837e73d80";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>
 
 <% if (config.disqus_shortname){ %>
